@@ -5,13 +5,11 @@
   </form>
 </template>
 
-<script>
+<script setup>
 import { ref } from "vue";
 import { useTaskStore } from "../stores/TaskStore";
 
-export default {
-  setup() {
-    const taskStore = useTaskStore();
+const taskStore = useTaskStore();
 
     const newTask = ref("")
 
@@ -26,7 +24,6 @@ export default {
         }
     }
 
-    return {handleSubmit, newTask}
-  },
-};
 </script>
+
+
