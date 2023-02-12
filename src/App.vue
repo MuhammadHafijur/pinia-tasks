@@ -45,7 +45,7 @@
 
     <!-- task list -->
     <div class="task-list" v-if="filter === 'all'">
-      <p>You have {{ totalCount }} tasks left to do</p>
+      <p class="">You have {{ totalCount }} tasks left to do</p>
       <div v-for="task in tasks" :key="task.id">
         <TaskDetails :task="task" />
       </div>
