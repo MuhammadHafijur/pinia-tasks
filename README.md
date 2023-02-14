@@ -13,13 +13,19 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-yarn add
+yarn
+```
+
+## Start JSON Server
+
+```sh
+npx json-server --watch data/db.json
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn run dev
+yarn dev
 ```
 
 ### Compile and Minify for Production
